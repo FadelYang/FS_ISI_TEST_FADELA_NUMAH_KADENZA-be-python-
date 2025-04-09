@@ -9,7 +9,7 @@ services:
       -  .:/app
     environment:
       -  PYTHONBUFFERED=1
-      -  DATABASE_URL=postgresql://postgres:postgres@db:5434/varion-todo
+      -  DATABASE_URL=postgresql://postgres:postgres@db:5432/varion-todo
     depends_on:
       - db
   db:
