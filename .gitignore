@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environment
+venv/
+.env
+
+# Editor configs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+
+# Python dependency file
+*.egg-info/
+dist/
+build/
+
+# Alembic migration cache
+alembic/versions/*.pyc
+alembic/versions/__pycache__/
+
+# SQLite (if used temporarily)
+*.sqlite3
+
+# Docker
+*.log
+*.pid
+
+# Don't commit your local DB volumes
+pgdata/
