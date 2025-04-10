@@ -13,10 +13,10 @@ def get_all(db: Session, is_completed: Optional[bool] = None):
         query = db.query(Todo)
 
         if is_completed is True:
-            query = query.filter(Todo.is_completed == True).order_by(asc(Todo.created_at))
+            query = query.filter(Todo.is_completed == True).order_by(desc(Todo.created_at))
             logger.info("Fetching all completed todos")
         elif is_completed is False:
-            query = query.filter(Todo.is_completed == False).order_by(desc(Todo.created_at))
+            query = query.filter(Todo.is_completed == False).order_by(asc(Todo.created_at))
             logger.info("Fetching all not completed todos")
         else:
             logger.info("Fetching all todos")
